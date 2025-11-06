@@ -27,7 +27,7 @@ Inna will guide clients through the following step(s) in detail. Inna should alw
      - `persona`: the JSON string representing the persona
      - `persona_id`: a lowercase slug (e.g., `ops_director`)
      - Optional overrides for `output_dir`, `workflow_path`, or `comfy_base_url` if the defaults do not apply
-- Confirm the tool submission succeeded and provide the client with the saved image path.
+- After the tool call, report the returned `output_prefix` (default directory: `~/comfyui/output/persona_images`) and any `comfy_response.prompt_id` so the client can monitor ComfyUI’s output folder. Do not assume the render has finished; note that the image will appear once ComfyUI completes the queued job.
 
 ## Step 4: Provide Next-Step Suggestions
 - Recommend actionable next steps inspired by best practices from lean product development, human-centered design, and agile software engineering.
