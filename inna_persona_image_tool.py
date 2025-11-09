@@ -1,12 +1,11 @@
 import json
-import os
 import random
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
 
 import requests
-from pydantic import BaseModel, Field
+from pydantic import Field
 from pydantic.fields import FieldInfo
 
 
@@ -14,35 +13,42 @@ class Tools:
     def __init__(self):
         pass
 
-    def generate_persona_line_art(
-        self,
-        persona: str = Field(..., description="Proto-persona JSON string produced by Inna Step 3."),
-        persona_id: str = Field(..., description="Slug used for file names, e.g. 'ops_director'."),
-        output_dir: str = Field("~/comfyui/output/persona_images", description="Directory (inside ComfyUI's output tree) where generated images are saved."),
-        workflow_path: str = Field("/Users/287096/inna/line-art.json", description="Path to the ComfyUI workflow JSON template."),
-        comfy_base_url: str = Field("http://127.0.0.1:8188", description="Base URL for the local ComfyUI instance.")
-    ) -> str:
-        """Generate a single-line persona illustration via ComfyUI using the stored workflow."""
-        try:
-            persona_data = json.loads(persona)
-        except json.JSONDecodeError as exc:
-            raise ValueError("Persona must be valid JSON.") from exc
+    @staticmethod
+    def _resolve_default(value: Any, fallback: Any) -> Any:
+        if isinstance(value, FieldInfo):
+            if value.default not in (None, ...):
+                return value.default
+            factory = value.default_factory
+            if factory is not None and callable(factory):
+                return factory()
+            return fallback
+        return value
 
-        def resolve_default(value: Any, fallback: Any) -> Any:
-            if isinstance(value, FieldInfo):
-                if value.default not in (None, ...):
-                    return value.default
-                factory = value.default_factory
-                if factory is not None and callable(factory):
-                    return factory()
-                return fallback
-            return value
+    @staticmethod
+    def _coerce_persona(persona: Any) -> Dict[str, Any]:
+        if isinstance(persona, dict):
+            return persona
+        if isinstance(persona, str):
+            persona = persona.strip()
+            if not persona:
+                raise ValueError("Persona payload is empty.")
+            try:
+                data = json.loads(persona)
+            except json.JSONDecodeError as exc:
+                raise ValueError("Persona must be valid JSON.") from exc
+            if not isinstance(data, dict):
+                raise ValueError("Persona JSON must decode to an object.")
+            return data
+        raise TypeError("Persona must be provided as a JSON string or dictionary.")
 
-        default_output_dir = str((Path.home() / "comfyui" / "output" / "persona_images"))
-        output_dir = resolve_default(output_dir, default_output_dir)
-        workflow_path = resolve_default(workflow_path, "/Users/287096/inna/line-art.json")
-        comfy_base_url = resolve_default(comfy_base_url, "http://127.0.0.1:8188")
+    @staticmethod
+    def _clean_phrase(value: str, fallback: str) -> str:
+        value = (value or '').strip()
+        if not value:
+            return fallback
+        return value.rstrip('.')
 
+    def _build_workflow(self, persona_data: Dict[str, Any], persona_id: str, output_dir: str, workflow_path: str) -> Dict[str, Any]:
         name = (
             persona_data.get("name")
             or persona_data.get("Name")
@@ -77,12 +83,7 @@ class Tools:
             or []
         )
 
-        def clean_phrase(value: str, fallback: str) -> str:
-            value = (value or '').strip()
-            if not value:
-                return fallback
-            value = value.rstrip('.')
-            return value
+        clean_phrase = self._clean_phrase
 
         demographic_phrase = clean_phrase(', '.join(demographics), 'modern professional')
         posture_phrase = clean_phrase(behaviors[0] if behaviors else '', 'upright posture, attentive hands')
@@ -117,11 +118,6 @@ class Tools:
             'cfg': 5,
             'seed': random.randint(10 ** 5, 10 ** 12),
         }
-        persona_prompt = {
-            'positive_persona': positive_raw,
-            'notes_explanation': notes,
-            'render': render,
-        }
 
         workflow_file = Path(workflow_path)
         if not workflow_file.exists():
@@ -154,7 +150,24 @@ class Tools:
         filename_prefix = str(output_path / persona_id)
         workflow['17']['inputs']['filename_prefix'] = filename_prefix
 
-        payload = {'prompt': workflow, 'client_id': f"inna-{persona_id}-{datetime.utcnow().timestamp()}"}
+        payload = {
+            'prompt': workflow,
+            'client_id': f"inna-{persona_id}-{datetime.utcnow().timestamp()}"
+        }
+
+        result = {
+            'persona_id': persona_id,
+            'positive_persona': positive_raw,
+            'notes_explanation': notes,
+            'render': render,
+            'workflow_submitted': False,
+            'output_prefix': filename_prefix,
+        }
+
+        return payload, result
+
+    @staticmethod
+    def _submit_prompt(comfy_base_url: str, payload: Dict[str, Any]) -> Dict[str, Any]:
         try:
             response = requests.post(
                 f"{comfy_base_url.rstrip('/')}/prompt",
@@ -166,17 +179,97 @@ class Tools:
             raise RuntimeError(f"ComfyUI prompt submission failed: {exc}") from exc
 
         try:
-            comfy_ack = response.json()
+            return response.json()
         except ValueError:
-            comfy_ack = {"raw": response.text[:200]}
+            return {"raw": response.text[:200]}
 
-        result = {
-            'persona_id': persona_id,
-            'positive_persona': positive_raw,
-            'notes_explanation': notes,
-            'render': render,
-            'workflow_submitted': True,
-            'output_prefix': filename_prefix,
-            'comfy_response': comfy_ack,
-        }
+    def _generate_single(
+        self,
+        persona_data: Dict[str, Any],
+        persona_id: str,
+        output_dir: str,
+        workflow_path: str,
+        comfy_base_url: str,
+    ) -> Dict[str, Any]:
+        payload, result = self._build_workflow(persona_data, persona_id, output_dir, workflow_path)
+        comfy_ack = self._submit_prompt(comfy_base_url, payload)
+        result['workflow_submitted'] = True
+        result['comfy_response'] = comfy_ack
+        return result
+
+    def generate_persona_line_art(
+        self,
+        persona: str = Field(..., description="Proto-persona JSON string produced by Inna Step 3."),
+        persona_id: str = Field(..., description="Slug used for file names, e.g. 'ops_director'."),
+        output_dir: str = Field("~/comfyui/output/persona_images", description="Directory (inside ComfyUI's output tree) where generated images are saved."),
+        workflow_path: str = Field("/Users/287096/inna/line-art.json", description="Path to the ComfyUI workflow JSON template."),
+        comfy_base_url: str = Field("http://127.0.0.1:8188", description="Base URL for the local ComfyUI instance."),
+    ) -> str:
+        persona_data = self._coerce_persona(persona)
+
+        default_output_dir = str(Path.home() / "comfyui" / "output" / "persona_images")
+        output_dir = self._resolve_default(output_dir, default_output_dir)
+        workflow_path = self._resolve_default(workflow_path, "/Users/287096/inna/line-art.json")
+        comfy_base_url = self._resolve_default(comfy_base_url, "http://127.0.0.1:8188")
+
+        result = self._generate_single(persona_data, persona_id, output_dir, workflow_path, comfy_base_url)
         return json.dumps(result, ensure_ascii=False)
+
+    def generate_persona_line_art_batch(
+        self,
+        personas: List[Dict[str, Any]] = Field(
+            ..., description="List of entries, each containing 'persona' (JSON string or dict) and 'persona_id' (slug)."
+        ),
+        output_dir: str = Field("~/comfyui/output/persona_images", description="Directory (inside ComfyUI's output tree) where generated images are saved."),
+        workflow_path: str = Field("/Users/287096/inna/line-art.json", description="Path to the ComfyUI workflow JSON template."),
+        comfy_base_url: str = Field("http://127.0.0.1:8188", description="Base URL for the local ComfyUI instance."),
+    ) -> str:
+        default_output_dir = str(Path.home() / "comfyui" / "output" / "persona_images")
+        output_dir = self._resolve_default(output_dir, default_output_dir)
+        workflow_path = self._resolve_default(workflow_path, "/Users/287096/inna/line-art.json")
+        comfy_base_url = self._resolve_default(comfy_base_url, "http://127.0.0.1:8188")
+
+        results: List[Dict[str, Any]] = []
+        for index, entry in enumerate(personas):
+            if not isinstance(entry, dict):
+                results.append({
+                    'status': 'error',
+                    'persona_id': f'entry_{index}',
+                    'workflow_submitted': False,
+                    'error': 'Each item must be a dictionary with keys "persona" and "persona_id".'
+                })
+                continue
+
+            persona_payload = entry.get('persona')
+            persona_id = entry.get('persona_id')
+
+            if persona_payload is None or not persona_id:
+                results.append({
+                    'status': 'error',
+                    'persona_id': entry.get('persona_id', f'entry_{index}'),
+                    'workflow_submitted': False,
+                    'error': 'Each entry must include both "persona" and "persona_id".'
+                })
+                continue
+
+            try:
+                persona_data = self._coerce_persona(persona_payload)
+                single_result = self._generate_single(persona_data, persona_id, output_dir, workflow_path, comfy_base_url)
+                single_result['status'] = 'success'
+                results.append(single_result)
+            except Exception as exc:
+                results.append({
+                    'status': 'error',
+                    'persona_id': persona_id,
+                    'workflow_submitted': False,
+                    'error': str(exc),
+                })
+
+        summary = {
+            'requested': len(personas),
+            'succeeded': sum(1 for item in results if item.get('status') == 'success'),
+            'failed': sum(1 for item in results if item.get('status') == 'error'),
+            'results': results,
+        }
+
+        return json.dumps(summary, ensure_ascii=False)
