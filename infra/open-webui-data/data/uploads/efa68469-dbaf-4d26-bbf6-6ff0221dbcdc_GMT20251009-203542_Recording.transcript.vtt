@@ -1,0 +1,1314 @@
+WEBVTT
+
+1
+00:00:04.100 --> 00:00:06.319
+Amith Kozhipuram: That's the test file.
+
+2
+00:00:08.340 --> 00:00:18.299
+Amith Kozhipuram: And… I'm sending over the… Latest component library as well.
+
+3
+00:00:20.450 --> 00:00:36.370
+Amith Kozhipuram: I've attached it to the, test file, Louise, in case you want to reach into the, reach the banner through the assets panel, you could do that, or you could copy-paste from this library how your, workflow
+
+4
+00:00:37.210 --> 00:00:38.210
+Amith Kozhipuram: Okay.
+
+5
+00:00:38.810 --> 00:00:49.430
+Luis Gallo: Okay, so I have the first link, that's the test file, so, I just requested access from you. It's opening now, it's opening, it's in my Figma, my desktop, so that's… that's great.
+
+6
+00:00:49.670 --> 00:00:59.299
+Luis Gallo: I got… so I'm opening the other Figma right now, the library right now, and that's also open in my Figma desktop, so that's good.
+
+7
+00:00:59.470 --> 00:01:04.920
+Luis Gallo: So, okay, so, create a banner for the homepage.
+
+8
+00:01:05.209 --> 00:01:08.429
+Amith Kozhipuram: Oh, sorry, Luis, could you share your screen, so…
+
+9
+00:01:08.680 --> 00:01:11.410
+Luis Gallo: Sure, yeah, yeah, yeah, of course, sorry,
+
+10
+00:01:11.670 --> 00:01:15.929
+Luis Gallo: You did say that about before. This is…
+
+11
+00:01:16.050 --> 00:01:18.030
+Luis Gallo: This is what I see right here.
+
+12
+00:01:20.600 --> 00:01:21.430
+Luis Gallo: Okay.
+
+13
+00:01:21.610 --> 00:01:27.579
+Luis Gallo: So, read the updated documentation as needed, all your existing workflow to build a banner.
+
+14
+00:01:29.070 --> 00:01:35.779
+Luis Gallo: Okay, so, there's nothing else on… on… in this Figma, is there?
+
+15
+00:01:36.220 --> 00:01:37.720
+Amith Kozhipuram: No, there's nothing else.
+
+16
+00:01:38.080 --> 00:01:43.880
+Luis Gallo: Okay, cool. So… so do you want me to go, like, to go reference, like, for example,
+
+17
+00:01:44.080 --> 00:01:51.990
+Luis Gallo: like, a homepage that I'm currently working on right now, like, for example, like, can you see this? Like, the Halloween? Yeah, y'all can see this?
+
+18
+00:01:51.990 --> 00:01:52.540
+Amith Kozhipuram: Yep.
+
+19
+00:01:52.790 --> 00:01:53.630
+Luis Gallo: So…
+
+20
+00:01:54.210 --> 00:02:01.509
+Luis Gallo: Yeah, so this is basically kind of, like, my day-to-day banners that I, kind of work from, so,
+
+21
+00:02:02.210 --> 00:02:11.260
+Luis Gallo: you know, the way, if I wanted to kind of, like, rebuild this, like, I, you know, what I would do is I would come in here, so we have, you know.
+
+22
+00:02:11.940 --> 00:02:28.999
+Luis Gallo: all the templates are laid out here, like, in our Figma file, like, in the homepage, design file, we have another, tab here on the left. It just says templates, and that has all the latest, the latest components that we use, like, on a regular basis, kind of laid out in our current workflow.
+
+23
+00:02:29.180 --> 00:02:31.279
+Luis Gallo: And so we have,
+
+24
+00:02:31.590 --> 00:02:43.939
+Luis Gallo: So, like, when I start a new week, I'll typically come over here, and I'll grab the parts that I need. So this is what I'm going to be using. So I bring it over here to the correct week. This is P13 on week 5.
+
+25
+00:02:44.260 --> 00:02:46.920
+Luis Gallo: So I lay it in… in here.
+
+26
+00:02:47.410 --> 00:02:53.549
+Luis Gallo: So typically, I would… you know, I would start from,
+
+27
+00:02:53.960 --> 00:02:56.549
+Luis Gallo: the component, so I would grab this piece.
+
+28
+00:02:56.720 --> 00:03:02.159
+Luis Gallo: You know, we would, have it here, and then we would just kind of start… oh, sorry, hold on.
+
+29
+00:03:02.210 --> 00:03:18.320
+Luis Gallo: we would start just basically filling in all, like, all the spaces, right? So this is the above-the-fold grid, the hero grid that we use, and so I would just basically start to, yeah, to just build it, right? So I come over here, and these are already…
+
+30
+00:03:18.410 --> 00:03:21.809
+Luis Gallo: These are components, so I'll have to detach them so I can work with them.
+
+31
+00:03:21.810 --> 00:03:23.829
+Amith Kozhipuram: Right? So I have to come in here, and I have to…
+
+32
+00:03:24.390 --> 00:03:25.779
+Luis Gallo: Like, the whole thing.
+
+33
+00:03:26.090 --> 00:03:26.850
+Luis Gallo: Yeah, go ahead.
+
+34
+00:03:26.850 --> 00:03:32.400
+Brian Monzingo: I'm sorry to interrupt. Hi, this is Brian. I'll turn my camera on so it's not weird. Well, it's still weird, I'm in my car.
+
+35
+00:03:32.400 --> 00:03:35.750
+Luis Gallo: It's kind of weird, it's kind of weird, man, not gonna lie.
+
+36
+00:03:35.750 --> 00:03:39.820
+Brian Monzingo: Thank you for, for showing us,
+
+37
+00:03:40.900 --> 00:03:44.240
+Brian Monzingo: What your work, space is like.
+
+38
+00:03:44.620 --> 00:03:46.589
+Brian Monzingo: I… I… and I'm sorry if…
+
+39
+00:03:46.740 --> 00:03:52.539
+Brian Monzingo: This wasn't clear from Amit's instructions, or if you were getting there, but…
+
+40
+00:03:52.710 --> 00:04:01.590
+Brian Monzingo: What we would love to see you do is use the new banner component that we created, And…
+
+41
+00:04:01.700 --> 00:04:04.400
+Brian Monzingo: And design a banner.
+
+42
+00:04:04.640 --> 00:04:13.680
+Brian Monzingo: Like, using maybe some of the assets that you already have, but see if you can use the… if the new component, like, treats you better than the… than the old, or the current.
+
+43
+00:04:13.680 --> 00:04:21.090
+Luis Gallo: Where is… is the new component that you're speaking of, is it in this other usability test, WebCX?
+
+44
+00:04:21.310 --> 00:04:23.870
+Luis Gallo: file, or, like, where do I get to this new banner?
+
+45
+00:04:24.690 --> 00:04:25.840
+Brian Monzingo: It is.
+
+46
+00:04:26.620 --> 00:04:31.620
+Amith Kozhipuram: Yeah, this is the new component, luis, too.
+
+47
+00:04:31.840 --> 00:04:44.029
+Amith Kozhipuram: Looking at some examples and documentation, we have the main component in there as well, and some sticker sheet that you can copy instances off of.
+
+48
+00:04:44.030 --> 00:04:52.150
+Luis Gallo: So these are the compo- these are the new components right here. So these are the components you want me to mess around with. Nice! Okay, alright, well…
+
+49
+00:04:52.350 --> 00:04:57.809
+Luis Gallo: I'm gonna go… I'm gonna go big, so I can pick any of these, right? I can pick any of them?
+
+50
+00:04:57.820 --> 00:04:59.959
+Amith Kozhipuram: Alright, well then I'm just gonna pick…
+
+51
+00:04:59.960 --> 00:05:00.960
+Luis Gallo: We'll wait. This guy.
+
+52
+00:05:00.960 --> 00:05:02.620
+Brian Monzingo: I have a caveat.
+
+53
+00:05:03.110 --> 00:05:04.150
+Luis Gallo: Okay, go for it.
+
+54
+00:05:04.460 --> 00:05:09.750
+Brian Monzingo: Because, those are custom, custom height.
+
+55
+00:05:10.120 --> 00:05:11.000
+Luis Gallo: Okay, okay.
+
+56
+00:05:11.000 --> 00:05:19.899
+Brian Monzingo: I think we'd really… we'd really be interested to know if there's a, if there's, like, a height that you use that isn't custom.
+
+57
+00:05:21.070 --> 00:05:21.610
+Brian Monzingo: Like, so…
+
+58
+00:05:21.610 --> 00:05:22.490
+Luis Gallo: Yeah.
+
+59
+00:05:22.490 --> 00:05:27.100
+Brian Monzingo: If… if one of the top… one of the top ones that's not in the custom area, yeah.
+
+60
+00:05:28.120 --> 00:05:34.730
+Luis Gallo: Yeah, so I guess this would probably be… this is 300 pixels. I think this would be a good one to work with. This is…
+
+61
+00:05:34.960 --> 00:05:41.290
+Luis Gallo: standard. I'm gonna snag this one… You want me to do all the banners, all three versions, or just one?
+
+62
+00:05:43.240 --> 00:05:49.100
+Amith Kozhipuram: You could start with one, Louise, and if you feel like messing around with the rest.
+
+63
+00:05:49.360 --> 00:05:49.810
+Luis Gallo: Yeah.
+
+64
+00:05:49.810 --> 00:05:50.610
+Amith Kozhipuram: Minnesota?
+
+65
+00:05:50.980 --> 00:05:54.050
+Luis Gallo: Yeah, yeah, no, I feel like,
+
+66
+00:05:54.710 --> 00:05:57.300
+Luis Gallo: Yes, I could definitely do that. I'm like…
+
+67
+00:05:57.890 --> 00:06:05.690
+Luis Gallo: Let me see… I'm gonna bring it in over here, and so these are banners, you know, we'll pretend like they love my Halloween banner so much.
+
+68
+00:06:05.800 --> 00:06:14.929
+Luis Gallo: and they want to, they want to put it in other placements on the website, so I'm gonna use these banners to build these new things, right? And so.
+
+69
+00:06:15.990 --> 00:06:24.299
+Luis Gallo: So I see this is a component, so I'm gonna detach it. So that's how I always work. So I always detach the instance so I can edit it.
+
+70
+00:06:24.640 --> 00:06:33.080
+Luis Gallo: I learned to check and see if it… so I see that the clip content isn't selected, so I'm gonna select that.
+
+71
+00:06:33.520 --> 00:06:43.270
+Luis Gallo: And I'm gonna do that to all of them. So I detach the instance on all of them, and I do clip content for everything, so I can just kind of move quickly.
+
+72
+00:06:43.840 --> 00:06:45.030
+Luis Gallo: And then…
+
+73
+00:06:45.400 --> 00:06:57.609
+Luis Gallo: So I'm gonna take these assets. So, like, normally, like, in a lot of cases, you know, we pull from things that were already shot, and these are all assets that I shoot in a studio, but these are things, you know, that have already been laid out. So I'm gonna resize this.
+
+74
+00:06:57.930 --> 00:07:00.790
+Luis Gallo: And… in these new components.
+
+75
+00:07:00.960 --> 00:07:02.629
+Luis Gallo: Let me just select all the…
+
+76
+00:07:03.310 --> 00:07:05.440
+Luis Gallo: this stuff. I'm sure there's probably, like, a…
+
+77
+00:07:05.910 --> 00:07:09.159
+Luis Gallo: a better way to select all these things, but I'm just like…
+
+78
+00:07:09.280 --> 00:07:12.079
+Luis Gallo: Being watched right now, and it's a little awkward, so…
+
+79
+00:07:12.230 --> 00:07:14.390
+Amith Kozhipuram: So…
+
+80
+00:07:14.630 --> 00:07:15.510
+Luis Gallo: Yeah.
+
+81
+00:07:15.810 --> 00:07:17.990
+Luis Gallo: What I should… yeah, so…
+
+82
+00:07:18.110 --> 00:07:20.970
+Luis Gallo: So I come in here, and then,
+
+83
+00:07:21.080 --> 00:07:25.470
+Luis Gallo: So I check the, the layers over here, and I see, okay, where do I…
+
+84
+00:07:26.010 --> 00:07:33.770
+Luis Gallo: want to sort of place this. I see you have an image export area, so you'd want to kind of lay it out, like, in… in there, but I see…
+
+85
+00:07:33.960 --> 00:07:45.040
+Luis Gallo: everything seems to be, like, stacking and doing some weird… some weirdness in there, so I don't know if it has something to do with, like, the settings of alignment or, like, cont… or, like, the way that the…
+
+86
+00:07:46.590 --> 00:07:49.590
+Luis Gallo: Because, like, if I'm pasting it, so, like, it should just, like…
+
+87
+00:07:49.790 --> 00:07:58.309
+Luis Gallo: just paste like this, right? It should all stay intact, but when I put it in there, it seems like it wants to, like, stack.
+
+88
+00:07:58.940 --> 00:08:01.259
+Luis Gallo: So I… So I see that.
+
+89
+00:08:01.690 --> 00:08:10.369
+Amith Kozhipuram: So we've got some nested components in there, and we've tried to place instructions in the layer naming.
+
+90
+00:08:11.010 --> 00:08:19.629
+Amith Kozhipuram: So if you look at the image container layer inside the banner component, if you scroll up a little bit.
+
+91
+00:08:20.410 --> 00:08:24.870
+Amith Kozhipuram: So you would need to detach this particular layer.
+
+92
+00:08:25.320 --> 00:08:27.869
+Luis Gallo: Oh, I see. I see it now. Oh, I see.
+
+93
+00:08:27.870 --> 00:08:28.989
+Amith Kozhipuram: I see, I see.
+
+94
+00:08:29.430 --> 00:08:31.009
+Amith Kozhipuram: Right. Oh, sorry, one second.
+
+95
+00:08:32.809 --> 00:08:34.139
+Luis Gallo: Yeah, that makes sense.
+
+96
+00:08:34.340 --> 00:08:37.779
+Amith Kozhipuram: Yep, so we've got the clip, content.
+
+97
+00:08:38.010 --> 00:08:41.610
+Amith Kozhipuram: Inside this, nested component, basically, so…
+
+98
+00:08:42.210 --> 00:08:48.039
+Amith Kozhipuram: You won't need to turn on the clip content on the main parent component anymore.
+
+99
+00:08:48.040 --> 00:08:49.170
+Luis Gallo: Awesome. Okay.
+
+100
+00:08:49.320 --> 00:08:49.930
+Amith Kozhipuram: Right.
+
+101
+00:08:50.660 --> 00:08:56.080
+Luis Gallo: So… does this… alright, so you guys can still see my screen, okay, and let me zoom…
+
+102
+00:08:56.930 --> 00:08:58.469
+Luis Gallo: Is everybody good?
+
+103
+00:08:58.470 --> 00:09:00.219
+Amith Kozhipuram: Yep, yep, we can see it.
+
+104
+00:09:00.550 --> 00:09:06.769
+Luis Gallo: Okay, cool. Yeah, so… so that… that's… I mean, that's kind of it, you know? That's kind of, like…
+
+105
+00:09:06.920 --> 00:09:12.380
+Luis Gallo: it, for there. I mean, and then, like, we would, you know, export
+
+106
+00:09:12.530 --> 00:09:18.770
+Luis Gallo: So I guess there's, a layer here, I think you said it, there was a… Hold on.
+
+107
+00:09:19.440 --> 00:09:28.779
+Luis Gallo: I'm all over the place. Export image. So we would have to export this layer, image export. So we would name this layer and export this.
+
+108
+00:09:29.060 --> 00:09:35.650
+Luis Gallo: And that wouldn't include the copy. The copy is not, isn't part of that.
+
+109
+00:09:35.880 --> 00:09:43.039
+Luis Gallo: Yeah, so… so we would just, you know, and then… and do the same thing on the other ones, I mean, you just…
+
+110
+00:09:43.250 --> 00:09:45.509
+Luis Gallo: Come over here and do, like, what you said.
+
+111
+00:09:45.660 --> 00:09:49.770
+Luis Gallo: So I'll select the banner, image container.
+
+112
+00:09:49.920 --> 00:09:55.560
+Luis Gallo: So detach that guy, throw in the new stuff… oh, I should've did it again, hold on.
+
+113
+00:09:56.420 --> 00:10:01.799
+Luis Gallo: Image… artwork? Yeah, so there we go. So I threw it in there.
+
+114
+00:10:02.090 --> 00:10:07.800
+Luis Gallo: want to resize it a little bit? It's already kind of laid out, so you just want to resize it, and there's your…
+
+115
+00:10:08.220 --> 00:10:11.659
+Luis Gallo: Tablet version of… of, this guy.
+
+116
+00:10:12.130 --> 00:10:12.920
+Amith Kozhipuram: Okay.
+
+117
+00:10:13.340 --> 00:10:21.530
+Luis Gallo: And they would get a copy, like, usually the copywriter will go in there, and they'll, like, they'll mess with the copy. They're… they're writing the copy in there directly, so I don't really mess with that.
+
+118
+00:10:21.840 --> 00:10:22.850
+Luis Gallo: Okay.
+
+119
+00:10:23.380 --> 00:10:28.070
+Luis Gallo: And then, just, you know, just last stack, I'll just do this one.
+
+120
+00:10:29.160 --> 00:10:31.700
+Luis Gallo: Do you guys have… you know.
+
+121
+00:10:33.060 --> 00:10:40.910
+Luis Gallo: Plenty of content to… Make fun of, and stuff over there, and… Alright.
+
+122
+00:10:42.530 --> 00:10:45.769
+Luis Gallo: I don't know, where is it, where is it?
+
+123
+00:10:46.670 --> 00:10:49.980
+Luis Gallo: Is it this one? Oh, it was this one. This one, right?
+
+124
+00:10:50.620 --> 00:10:55.870
+Luis Gallo: Image container… that… Why am I not able to detach that?
+
+125
+00:10:56.540 --> 00:10:58.430
+Amith Kozhipuram: Oh, it's already attached, I believe.
+
+126
+00:10:58.430 --> 00:11:03.369
+Luis Gallo: Oh, it's already detached? Oh, yeah, but it's… but it's doing that thing again, where it's, like, wrapping everything.
+
+127
+00:11:03.710 --> 00:11:09.140
+Amith Kozhipuram: Yeah, you need to select the image artwork layer.
+
+128
+00:11:09.260 --> 00:11:11.669
+Luis Gallo: Image Artwork Layer.
+
+129
+00:11:12.430 --> 00:11:18.460
+Luis Gallo: I see image container, I see appearance, I see… image artwork.
+
+130
+00:11:18.520 --> 00:11:19.729
+Amith Kozhipuram: There it is.
+
+131
+00:11:19.960 --> 00:11:21.940
+Luis Gallo: Damn, look at that.
+
+132
+00:11:24.110 --> 00:11:26.850
+Luis Gallo: Awesome. So yeah, man, that… that's…
+
+133
+00:11:27.050 --> 00:11:31.130
+Luis Gallo: I mean, that's pretty fast. That's pretty quick, you know? That's pretty easy. I mean…
+
+134
+00:11:31.530 --> 00:11:33.210
+Luis Gallo: I don't see any issues with that.
+
+135
+00:11:33.630 --> 00:11:46.889
+Amith Kozhipuram: Alright, so we've also put in some properties into the text component, so that the text block itself is a different nested component, and you can mess around with the properties.
+
+136
+00:11:47.130 --> 00:11:59.399
+Amith Kozhipuram: on the whole, as a text block, you could have it left-aligned, right-aligned, or central aligned. We have… we have all that documentation instructions in that usability test file.
+
+137
+00:11:59.770 --> 00:12:03.009
+Luis Gallo: Nice, nice, I see that. So you kind of have, like, the one…
+
+138
+00:12:03.490 --> 00:12:08.340
+Luis Gallo: the one solve for everything. It's like the ultimate… the ultimate component here.
+
+139
+00:12:08.350 --> 00:12:08.910
+Amith Kozhipuram: Ultimate.
+
+140
+00:12:08.910 --> 00:12:09.410
+Luis Gallo: every…
+
+141
+00:12:09.410 --> 00:12:10.220
+Amith Kozhipuram: Ultimate…
+
+142
+00:12:10.220 --> 00:12:13.560
+Luis Gallo: Every banner, every size, every height, every width.
+
+143
+00:12:13.570 --> 00:12:15.909
+Amith Kozhipuram: Drop shadow, no drop shadow…
+
+144
+00:12:15.910 --> 00:12:19.430
+Luis Gallo: Rounded, copyright color, light, dark.
+
+145
+00:12:19.970 --> 00:12:23.600
+Luis Gallo: Copyright, vertical alignment, you know, 10%.
+
+146
+00:12:24.000 --> 00:12:25.280
+Luis Gallo: 30%.
+
+147
+00:12:25.500 --> 00:12:31.360
+Luis Gallo: Center, show logo, not… oh, damn, the logos.
+
+148
+00:12:32.100 --> 00:12:35.229
+Luis Gallo: But that's… that's a big deal for me. That's great.
+
+149
+00:12:35.520 --> 00:12:38.910
+Luis Gallo: You have the button, you have…
+
+150
+00:12:39.220 --> 00:12:44.219
+Luis Gallo: You can pull in logos if you want, I guess, choose the instant, select a logo.
+
+151
+00:12:44.630 --> 00:12:51.960
+Luis Gallo: You have the color, you have the breakpoints, So you can go… Right? Wait.
+
+152
+00:12:52.290 --> 00:12:53.699
+Amith Kozhipuram: Why didn't that move?
+
+153
+00:12:53.920 --> 00:13:01.169
+Amith Kozhipuram: Oh, so that particular breakpoint drop-down is not something we need to edit.
+
+154
+00:13:01.480 --> 00:13:01.910
+Luis Gallo: Okay.
+
+155
+00:13:01.910 --> 00:13:03.499
+Amith Kozhipuram: It gets modified.
+
+156
+00:13:03.870 --> 00:13:07.319
+Amith Kozhipuram: Okay. When you select the parent breakpoint.
+
+157
+00:13:07.840 --> 00:13:08.280
+Luis Gallo: the one.
+
+158
+00:13:08.280 --> 00:13:09.720
+Brian Monzingo: The big one up at the top.
+
+159
+00:13:09.720 --> 00:13:10.300
+Amith Kozhipuram: Yep.
+
+160
+00:13:11.570 --> 00:13:15.920
+Luis Gallo: Oh, oh, up here, got it. Oh, I see what you're saying. Oh, dang!
+
+161
+00:13:15.920 --> 00:13:17.190
+Amith Kozhipuram: text as well.
+
+162
+00:13:17.190 --> 00:13:20.659
+Luis Gallo: Damn, damn… who made these?
+
+163
+00:13:20.950 --> 00:13:22.830
+Amith Kozhipuram: Brian, maybe, so…
+
+164
+00:13:23.120 --> 00:13:26.499
+Luis Gallo: Brian, in your car, did you make these in your car, too?
+
+165
+00:13:27.680 --> 00:13:37.059
+Brian Monzingo: I've made them in my car, I've made them in the park, I've made them in my daughter's room, like, I can make them anywhere.
+
+166
+00:13:37.060 --> 00:13:40.969
+Luis Gallo: Dude, that's like the new Dr. Seuss book right there, like.
+
+167
+00:13:41.960 --> 00:13:42.700
+Brian Monzingo: Yeah.
+
+168
+00:13:42.700 --> 00:13:43.939
+Luis Gallo: Yeah, it's like green eggs and ham.
+
+169
+00:13:43.940 --> 00:13:45.310
+Brian Monzingo: You gotta make, like.
+
+170
+00:13:45.310 --> 00:13:45.690
+Luis Gallo: Terror.
+
+171
+00:13:45.690 --> 00:13:46.610
+Brian Monzingo: mouse?
+
+172
+00:13:46.610 --> 00:13:51.400
+Luis Gallo: Yeah, I'll… yeah, yeah, I, I, you can tell I have a kid, so…
+
+173
+00:13:51.600 --> 00:14:01.449
+Luis Gallo: Small… yeah, dude, this is great. I, I, I love it. I was looking at… alright, so let's see, desktop…
+
+174
+00:14:02.170 --> 00:14:09.189
+Luis Gallo: 400… you guys, do you say that the copy can go to the right? Like, it can go right-aligned, or is it just centered or left?
+
+175
+00:14:10.320 --> 00:14:16.480
+Amith Kozhipuram: I believe it goes right along. Let me quickly check… oh, it does not go right aligned.
+
+176
+00:14:16.480 --> 00:14:20.830
+Luis Gallo: It does, right? Okay, okay. Well… I mean…
+
+177
+00:14:21.240 --> 00:14:32.570
+Luis Gallo: Yeah, in terms of, like, is it easy to use? Does it make sense? All of those things, I think it checks all those boxes. I don't see any issues. I think the way you have everything, labeled.
+
+178
+00:14:32.740 --> 00:14:36.000
+Luis Gallo: Here to the left, like, the layers themselves.
+
+179
+00:14:36.180 --> 00:14:38.749
+Luis Gallo: They're pretty… that's pretty solid,
+
+180
+00:14:39.100 --> 00:14:42.739
+Luis Gallo: I mean, you have, like, you know, drop shadow, you have the image container.
+
+181
+00:14:43.010 --> 00:14:46.899
+Amith Kozhipuram: And then it's giving you instructions to, like, detach the layer, you…
+
+182
+00:14:46.900 --> 00:14:55.669
+Luis Gallo: You want to do that. You have the appearance, you have the image export, you know, insert artwork. It seems like it's pretty, pretty straightforward, to me.
+
+183
+00:14:56.500 --> 00:14:59.989
+Amith Kozhipuram: Awesome, awesome. Thanks for walking us through that.
+
+184
+00:15:00.670 --> 00:15:07.069
+Amith Kozhipuram: Around the components themselves, I don't have any more questions.
+
+185
+00:15:07.610 --> 00:15:11.579
+Amith Kozhipuram: Alan or Brian, Did you guys wanna…
+
+186
+00:15:11.990 --> 00:15:15.799
+Amith Kozhipuram: have Louise look at something else while we're here.
+
+187
+00:15:16.280 --> 00:15:20.160
+Amith Kozhipuram: Before we move on to the documentation for a quick bit.
+
+188
+00:15:21.010 --> 00:15:27.430
+Alan Carolino: Not anything, any particular, task request for me. Brian, I'll leave it to you, but,
+
+189
+00:15:27.630 --> 00:15:37.220
+Alan Carolino: Luis, I just wanted to add just a little bit of… not to affect the test at all, but, like, to give a little context that I've been working with our contractors to rebuild and clean up
+
+190
+00:15:37.280 --> 00:15:53.460
+Alan Carolino: our components, our harvest components, so nothing will be changed, it should all just be cleaned up. So, we're hoping to see that, like, it all is familiar to you, and everything makes sense, like, as far as, like, functionality and all the things that you…
+
+191
+00:15:53.550 --> 00:15:59.540
+Alan Carolino: All the alignments and modifications that you expect to see are in there. So, nothing is…
+
+192
+00:15:59.730 --> 00:16:07.810
+Alan Carolino: changing with banners at all, it's all just being cleaned up into place. Hopefully, it's, usable for all our teams, not just… not just you and me, but just for everybody.
+
+193
+00:16:08.450 --> 00:16:14.529
+Luis Gallo: Yeah, no, I think this is… is… is great. I think it's… definitely, you see everything on the right, it just makes…
+
+194
+00:16:15.450 --> 00:16:18.160
+Luis Gallo: It, definitely feels easier, to me.
+
+195
+00:16:18.530 --> 00:16:19.839
+Luis Gallo: The way you have it laid out.
+
+196
+00:16:20.690 --> 00:16:21.460
+Amith Kozhipuram: Awesome.
+
+197
+00:16:21.550 --> 00:16:24.690
+Brian Monzingo: That's really… that's really cool to hear.
+
+198
+00:16:25.580 --> 00:16:28.260
+Brian Monzingo: Luis, there is one thing that I would…
+
+199
+00:16:28.790 --> 00:16:36.390
+Brian Monzingo: just love to see if it works. And that is… sometimes… After doing a layout.
+
+200
+00:16:36.620 --> 00:16:40.580
+Brian Monzingo: When viewing the content live.
+
+201
+00:16:42.460 --> 00:16:47.420
+Brian Monzingo: the, it, like… It could run into the text if it gets scaled to a smaller.
+
+202
+00:16:47.420 --> 00:16:47.790
+Luis Gallo: or something.
+
+203
+00:16:47.790 --> 00:16:48.620
+Brian Monzingo: eyes.
+
+204
+00:16:48.980 --> 00:16:54.070
+Brian Monzingo: And I'm… I'm wondering how you might use this component to,
+
+205
+00:16:54.560 --> 00:16:59.459
+Brian Monzingo: To test that, like, if you had a headline in there, just to make sure that
+
+206
+00:16:59.900 --> 00:17:05.099
+Brian Monzingo: It didn't overrun, and I'm going to give you…
+
+207
+00:17:05.210 --> 00:17:15.329
+Brian Monzingo: But I'm gonna give you a cheat, and that is in the documentation, I won't make you read it, but if you select all of the images from your.
+
+208
+00:17:15.339 --> 00:17:15.889
+Luis Gallo: H.
+
+209
+00:17:16.260 --> 00:17:17.500
+Brian Monzingo: image artwork.
+
+210
+00:17:18.010 --> 00:17:26.869
+Brian Monzingo: And… and set the property, the layout property to scale, you know, over on the right side, where underneath where it says mixed, if you go scale, scale.
+
+211
+00:17:27.089 --> 00:17:27.990
+Brian Monzingo: goes…
+
+212
+00:17:29.080 --> 00:17:32.680
+Luis Gallo: Up by the crosshairs on the left side.
+
+213
+00:17:33.770 --> 00:17:36.739
+Brian Monzingo: Yeah, where it says top, if you change that to scale.
+
+214
+00:17:37.390 --> 00:17:41.759
+Brian Monzingo: And then the other one above it, it doesn't have anything in it, but if you change that to scale…
+
+215
+00:17:41.930 --> 00:17:51.209
+Brian Monzingo: Okay, okay. And then… and then the container of all of them. Is image… is group or image artwork, are those also set the same way?
+
+216
+00:17:53.140 --> 00:17:55.070
+Brian Monzingo: Image Artwork and group.
+
+217
+00:17:55.800 --> 00:17:58.200
+Luis Gallo: Yes, yes, image artwork, that's…
+
+218
+00:17:58.200 --> 00:18:01.049
+Brian Monzingo: Can that one… can… will that one change?
+
+219
+00:18:01.640 --> 00:18:09.410
+Luis Gallo: Scale… scale… oh, it's like when I do scale to 1, it changes the other one to center, it's weird.
+
+220
+00:18:09.510 --> 00:18:12.299
+Brian Monzingo: just ungroup it, and I think it'll be fine.
+
+221
+00:18:12.300 --> 00:18:13.060
+Luis Gallo: Okay.
+
+222
+00:18:14.140 --> 00:18:14.850
+Brian Monzingo: Oops.
+
+223
+00:18:15.340 --> 00:18:17.220
+Luis Gallo: Oh, no, I just double grouped it.
+
+224
+00:18:18.980 --> 00:18:21.499
+Luis Gallo: Sorry. Okay. Alright, I see what you're saying.
+
+225
+00:18:21.500 --> 00:18:23.500
+Brian Monzingo: Now I think you're good.
+
+226
+00:18:23.500 --> 00:18:24.030
+Luis Gallo: Nope.
+
+227
+00:18:24.190 --> 00:18:25.060
+Brian Monzingo: This was gone.
+
+228
+00:18:25.780 --> 00:18:29.130
+Luis Gallo: Oh, let me see… Scale.
+
+229
+00:18:29.130 --> 00:18:29.710
+Brian Monzingo: Oh, will it?
+
+230
+00:18:29.710 --> 00:18:34.419
+Luis Gallo: Seems like it's… it's doing that again. It's like it's… it's kind of like whack-a-mole right now.
+
+231
+00:18:34.420 --> 00:18:45.570
+Brian Monzingo: Oh, okay, this is good, because I need to fix the component, but you can help me on your end. If you scroll up to the top, and click the image export, Insert Artwork.
+
+232
+00:18:46.210 --> 00:18:47.080
+Brian Monzingo: thing.
+
+233
+00:18:47.880 --> 00:18:49.070
+Luis Gallo: Later.
+
+234
+00:18:49.720 --> 00:18:50.800
+Brian Monzingo: The layer on the.
+
+235
+00:18:50.800 --> 00:18:52.650
+Luis Gallo: Yes, yes, got it.
+
+236
+00:18:52.960 --> 00:18:56.219
+Brian Monzingo: That says scale and scale, and then the one above it?
+
+237
+00:18:58.120 --> 00:19:00.060
+Luis Gallo: It doesn't say anything.
+
+238
+00:19:00.060 --> 00:19:04.869
+Brian Monzingo: Fine, okay, now let's get… now try to scale the whole banner and see if it works.
+
+239
+00:19:05.810 --> 00:19:08.090
+Luis Gallo: Oh, let me make sure I'm selecting everything.
+
+240
+00:19:09.350 --> 00:19:12.159
+Brian Monzingo: Okay, that's what it's supposed to owe, almost.
+
+241
+00:19:12.160 --> 00:19:14.600
+Luis Gallo: Almost, almost. It's moving a little bit, it's moving.
+
+242
+00:19:14.600 --> 00:19:15.940
+Brian Monzingo: Got some work to do.
+
+243
+00:19:17.310 --> 00:19:18.859
+Luis Gallo: Oh, I see what you're doing.
+
+244
+00:19:19.510 --> 00:19:22.760
+Luis Gallo: Yeah.
+
+245
+00:19:24.120 --> 00:19:38.239
+Luis Gallo: Yeah, because I think what happens, like, there's a rule, right? Alan and their team are like, well, you know, always use 50% of the banner, but sometimes the copy's really small. So sometimes you have a little bit of more space, and it just looks silly if there's this big…
+
+246
+00:19:38.620 --> 00:19:41.579
+Luis Gallo: You know, empty area, you know,
+
+247
+00:19:42.390 --> 00:19:46.890
+Luis Gallo: So I think, having that… Breakpoint, check.
+
+248
+00:19:47.410 --> 00:19:49.090
+Luis Gallo: you know, I think would be helpful.
+
+249
+00:19:50.830 --> 00:20:05.640
+Brian Monzingo: Thank you for humoring me on the scaling. That's something that's really important for quality assurance, you know, to make sure that it all scales right, and we want the tool to work for you so that you're not having to fidget with the controls.
+
+250
+00:20:06.190 --> 00:20:06.580
+Luis Gallo: For sure.
+
+251
+00:20:06.580 --> 00:20:09.640
+Brian Monzingo: That was my one thing that I wanted to see. Thank you.
+
+252
+00:20:09.830 --> 00:20:11.529
+Luis Gallo: Yeah, yeah, man, and then…
+
+253
+00:20:11.830 --> 00:20:17.770
+Luis Gallo: So I would take this banner, and I would, you know, just put it over here at the bottom of our…
+
+254
+00:20:19.200 --> 00:20:22.030
+Luis Gallo: Yeah, it would live, you know, somewhere like that.
+
+255
+00:20:24.160 --> 00:20:24.750
+Amith Kozhipuram: Awesome.
+
+256
+00:20:26.200 --> 00:20:27.100
+Amith Kozhipuram: Nice.
+
+257
+00:20:27.440 --> 00:20:32.400
+Amith Kozhipuram: Thanks for walking us through your workflow with this new component.
+
+258
+00:20:33.200 --> 00:20:40.489
+Amith Kozhipuram: I think with the usability test, that's all we had. Yihan, did you have anything for Louise?
+
+259
+00:20:40.820 --> 00:20:42.450
+Yi Han: Hi, Luis. Thank you so.
+
+260
+00:20:42.450 --> 00:20:43.260
+Luis Gallo: Hi, yee, huh?
+
+261
+00:20:43.450 --> 00:20:53.480
+Yi Han: being us, I have one question, like, how confident are you to handle the work with these new components?
+
+262
+00:20:55.480 --> 00:21:01.650
+Luis Gallo: To hand this work over to somebody else, like, if I were to say, hey, go make this, I feel like if…
+
+263
+00:21:01.770 --> 00:21:16.309
+Luis Gallo: you know, I would definitely want to walk them through it a little bit. I think if they were to come in… so, I haven't looked at the documentation, but I feel like the documentation, from what I saw, looked pretty good, as long as those layers are called out.
+
+264
+00:21:16.560 --> 00:21:19.009
+Luis Gallo: you know, I think most people,
+
+265
+00:21:20.210 --> 00:21:27.339
+Luis Gallo: that work in Figma, I guess, understand the layers and stuff, so I think that's not a problem. But there's always a chance that somebody that doesn't have a lot of experience
+
+266
+00:21:27.540 --> 00:21:34.890
+Luis Gallo: you know, could go in there and might not understand, like, the layers. So, like, as long as that documentation is here in the,
+
+267
+00:21:35.520 --> 00:21:38.629
+Luis Gallo: you know, the Figma, then I think you should be, oh, you know.
+
+268
+00:21:38.820 --> 00:21:40.619
+Luis Gallo: I think we should be okay.
+
+269
+00:21:41.230 --> 00:21:42.879
+Yi Han: Gothic. Thank you.
+
+270
+00:21:43.520 --> 00:21:44.230
+Luis Gallo: Forrest.
+
+271
+00:21:46.990 --> 00:21:48.420
+Luis Gallo: Awesome, alright.
+
+272
+00:21:49.240 --> 00:21:49.680
+Amith Kozhipuram: Yes.
+
+273
+00:21:49.680 --> 00:21:50.720
+Luis Gallo: Anything else?
+
+274
+00:21:51.990 --> 00:22:01.030
+Amith Kozhipuram: I don't think so. That was it. And, just to highlight, we have all the instructions for,
+
+275
+00:22:01.350 --> 00:22:04.059
+Amith Kozhipuram: How to use this banner in the documentation.
+
+276
+00:22:06.150 --> 00:22:06.950
+Luis Gallo: Okay.
+
+277
+00:22:06.950 --> 00:22:14.890
+Amith Kozhipuram: And, if you zoom out, I think… The UX guidelines.
+
+278
+00:22:15.390 --> 00:22:20.889
+Amith Kozhipuram: And the last section… oh, the third vertical row.
+
+279
+00:22:21.590 --> 00:22:23.340
+Luis Gallo: Third vertical roll, right here.
+
+280
+00:22:24.350 --> 00:22:26.760
+Luis Gallo: Oh, right here, okay, it's all… Oh, right here.
+
+281
+00:22:26.930 --> 00:22:31.910
+Amith Kozhipuram: Yep, and all the way to the bottom, we have… I see it.
+
+282
+00:22:32.140 --> 00:22:34.350
+Amith Kozhipuram: specific instructions.
+
+283
+00:22:35.630 --> 00:22:37.959
+Amith Kozhipuram: So yeah, just wanted to call that out.
+
+284
+00:22:38.660 --> 00:22:41.649
+Luis Gallo: Awesome. Awesome. Yeah, I think this is,
+
+285
+00:22:41.800 --> 00:22:43.950
+Luis Gallo: This is very well done, very clean.
+
+286
+00:22:45.110 --> 00:22:47.809
+Luis Gallo: Very simple.
+
+287
+00:22:48.580 --> 00:22:53.430
+Luis Gallo: It looks really good. Man, I feel like this is, like, I'm, like, the ultimate rule breaker right here for this.
+
+288
+00:22:54.650 --> 00:23:00.640
+Luis Gallo: but… but yeah, no, I think this looks great, though, guys. Like, y'all did a good job.
+
+289
+00:23:01.700 --> 00:23:03.349
+Amith Kozhipuram: Awesome. Glad you're here.
+
+290
+00:23:03.750 --> 00:23:06.100
+Luis Gallo: Yeah, for sure. Alright, well…
+
+291
+00:23:06.100 --> 00:23:06.550
+Amith Kozhipuram: Mate.
+
+292
+00:23:06.550 --> 00:23:07.920
+Luis Gallo: What else? What else you need?
+
+293
+00:23:08.160 --> 00:23:18.940
+Amith Kozhipuram: That was all. I… unless you want to mess around with some other component, we have most of the… actually, all of the harvest components ready to go.
+
+294
+00:23:19.180 --> 00:23:26.610
+Amith Kozhipuram: So… If you want to mess around with any other component, you could do that. Otherwise,
+
+295
+00:23:26.720 --> 00:23:34.439
+Amith Kozhipuram: Banner was the main one we wanted to run by you, and… Check, how you felt about it?
+
+296
+00:23:35.480 --> 00:23:48.160
+Luis Gallo: Yeah, no, I feel pretty good. So this is an example of, like, the scaling, like, if you go from, like, a small iPhone to, like, a big iPhone, it's gonna scale the imagery, but the copy's gonna stay the same size.
+
+297
+00:23:50.290 --> 00:23:50.700
+Brian Monzingo: That's.
+
+298
+00:23:50.700 --> 00:23:51.290
+Amith Kozhipuram: Nope.
+
+299
+00:23:51.290 --> 00:23:52.920
+Luis Gallo: Okay, got it, okay.
+
+300
+00:23:52.920 --> 00:24:01.930
+Brian Monzingo: And those… those are your eyeballs watching the text, and the pictures, and the button to make sure they don't run into each other.
+
+301
+00:24:05.120 --> 00:24:06.179
+Brian Monzingo: I bought… that I bought.
+
+302
+00:24:06.180 --> 00:24:06.550
+Luis Gallo: Oh.
+
+303
+00:24:06.550 --> 00:24:10.400
+Brian Monzingo: Those are… those are your eyeballs. Those are all of our eyeballs.
+
+304
+00:24:10.640 --> 00:24:13.259
+Luis Gallo: Oh, oh, I see. Okay, I was like…
+
+305
+00:24:13.900 --> 00:24:17.270
+Luis Gallo: Yeah, that was a little weird there for a second, but I see what you're saying now, okay.
+
+306
+00:24:17.270 --> 00:24:24.040
+Brian Monzingo: I am a little weird, that's what my wife says, but I really wanted to… I…
+
+307
+00:24:24.650 --> 00:24:40.790
+Brian Monzingo: in… in doing research for this and looking at all the… all the banners that you have created, you and the team, the photography, the… the layout, like, the art direction, the food styling, everything, it is phenomenal. Like, I have…
+
+308
+00:24:40.970 --> 00:24:46.060
+Brian Monzingo: I was just so impressed, just blown away by the quality of the work that's being done, and I'm…
+
+309
+00:24:46.470 --> 00:24:53.019
+Brian Monzingo: And I have to apologize for, like, ripping off your work and putting in these guidelines, but it was…
+
+310
+00:24:53.700 --> 00:24:59.020
+Brian Monzingo: It was really inspiring, and it makes for a fantastic, like.
+
+311
+00:25:00.550 --> 00:25:04.810
+Brian Monzingo: portfolio of work that… that you and the team have. It's just amazing.
+
+312
+00:25:05.330 --> 00:25:15.350
+Luis Gallo: Thank you, man. Yeah, thank you. No, this is how I feel about y'all's work, too. So, I'm just trying to be as… as… as good as you guys, and, like, the work that you guys, do, so…
+
+313
+00:25:15.610 --> 00:25:21.119
+Luis Gallo: But yeah, that, and I always want to make, the goal is to make your components look good.
+
+314
+00:25:21.910 --> 00:25:24.099
+Luis Gallo: So, that's my goal.
+
+315
+00:25:24.440 --> 00:25:26.059
+Luis Gallo: I mean, that's one of my goals.
+
+316
+00:25:27.810 --> 00:25:40.380
+Luis Gallo: But yeah, awesome, awesome. Well, like, if there's anything else I can do, any other tests that you need, Brian, you mentioned that you're gonna look at the scaling a little bit more. If you want me to jump in on, you know, a quick Zoom or something like that, just shoot me a link, or…
+
+317
+00:25:40.760 --> 00:25:47.840
+Luis Gallo: you know, we can do it, but I think overall, you know, I think it's, like, I don't see any red flags, I think you've, you've thought of everything.
+
+318
+00:25:48.020 --> 00:25:51.280
+Luis Gallo: I think we're good.
+
+319
+00:25:52.740 --> 00:25:53.560
+Amith Kozhipuram: Awesome.
+
+320
+00:25:53.790 --> 00:25:59.109
+Amith Kozhipuram: Alright, in that case, I think we are done here.
+
+321
+00:25:59.110 --> 00:26:04.190
+Luis Gallo: Alright, well… Y'all have a good day, and, and
+
+322
+00:26:04.400 --> 00:26:09.089
+Luis Gallo: I'll talk to you soon, and now you can go out… now you can leave your car, Brian. Where… where you headed?
+
+323
+00:26:09.090 --> 00:26:17.179
+Brian Monzingo: Pretty soon, I'm just gonna go into the doctor's office here at Optum Health and have a checkup with my doctor, but everything is okay.
+
+324
+00:26:17.850 --> 00:26:20.350
+Luis Gallo: everything goes well, with that checkup.
+
+325
+00:26:20.350 --> 00:26:22.620
+Brian Monzingo: Thank you, I know it will.
+
+326
+00:26:22.620 --> 00:26:25.200
+Luis Gallo: Alright guys, y'all take care.
+
+327
+00:26:25.550 --> 00:26:26.240
+Yi Han: Thanks.
+
+328
+00:26:26.240 --> 00:26:28.160
+Brian Monzingo: Bye, too. Bye.
+
