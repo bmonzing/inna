@@ -1,0 +1,130 @@
+{
+  "7": {
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "8": {
+    "inputs": {
+      "lora_name": "Line_Art_SDXL.safetensors",
+      "strength_model": 0.75,
+      "strength_clip": 0.75,
+      "model": [
+        "7",
+        0
+      ],
+      "clip": [
+        "7",
+        1
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "10": {
+    "inputs": {
+      "text": "one continuous single-line drawing (single unbroken stroke), crisp black on pure white. subtle line-weight variation: slightly thicker outer contour, finer internal accents; confident, clean stroke; flat contour only, no shading. eye-level, slightly angled view. Alex Rivera, Senior Product Manager (Digital Experience), seated at a desk; leans forward, one hand gesturing to an open laptop, the other holding a stylus over a tablet; subtle determined expression; hair pulled back; rolled-sleeve collared shirt. composition center-left, person dominant, abundant negative space. minimal environment in the same continuous line: simple desk and ergonomic chair, laptop + tablet; wall hints (simple grid display, minimal kanban/calendar, small framed certificate); tidy notebooks, coffee mug, tiny plant. environment strictly secondary, fewer lines than the person; no text.",
+      "clip": [
+        "8",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt) - positive"
+    }
+  },
+  "11": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "12": {
+    "inputs": {
+      "seed": 872683444600162,
+      "steps": 20,
+      "cfg": 3.7,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "8",
+        0
+      ],
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "13",
+        0
+      ],
+      "latent_image": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "13": {
+    "inputs": {
+      "text": "color, gradients, shading, shadows, cross-hatching, texture, depth, lighting, 3D, filled areas, blur, noise, text, words, logos, watermarks, signatures, clutter, busy background, complex scene, photorealism, painterly, hatching, stippling, tone, drop shadows",
+      "clip": [
+        "8",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt) - negative"
+    }
+  },
+  "16": {
+    "inputs": {
+      "tile_size": 512,
+      "overlap": 64,
+      "temporal_size": 8,
+      "temporal_overlap": 4,
+      "samples": [
+        "12",
+        0
+      ],
+      "vae": [
+        "7",
+        2
+      ]
+    },
+    "class_type": "VAEDecodeTiled",
+    "_meta": {
+      "title": "VAE Decode (Tiled)"
+    }
+  },
+  "17": {
+    "inputs": {
+      "filename_prefix": "line_art",
+      "images": [
+        "16",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}
